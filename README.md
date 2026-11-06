@@ -26,7 +26,7 @@ ppt_build/
 
 ```bash
 python3 -m pip install --user -r requirements.txt      # 渲染检查另需 LibreOffice：brew install --cask libreoffice
-./install_skill.sh                                     # 把 skill 装到 ~/.cursor/skills 和 ~/.claude/skills
+./install_skill.sh                                     # 把 skill 装到 ~/.cursor、~/.claude、~/.codex 的 skills 目录
 
 python3 tools/new_talk.py ~/research/my-talk --title "我的汇报" \
     sc=~/dl/arXiv-2312.00109v1.tar.gz oc=~/dl/arXiv-2403.17898v2/ px=2509.24421v5

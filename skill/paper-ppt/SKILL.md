@@ -26,7 +26,7 @@ python3 -c "import pptx, fitz, matplotlib, PIL, lxml" || python3 -m pip install 
 which soffice || echo "需要 LibreOffice 做渲染检查：brew install --cask libreoffice"
 ```
 
-写 `~/research/...` 以外的路径、下载 arXiv 源码时，Shell 需要 `required_permissions: ["all"]`。
+写工作区以外的路径、下载 arXiv 源码、调用 LibreOffice 时需要沙箱外权限（Cursor：Shell 加 `required_permissions: ["all"]`；Codex：按提示申请提权）。
 
 ## 1. 建工程（一条命令）
 
@@ -72,7 +72,7 @@ python3 $PB/tools/new_talk.py <talk_dir> --title "<汇报标题>" \
 3. **一个贯穿例子**（例：同一栋建筑——换角度看 / 从远走近 / 被前楼挡住），开场、每篇动机、总结都用它。
 4. 每篇一句话“这一篇让 X 往前走了哪一步”。
 
-用户没给主题时，用 AskQuestion 给 2–3 个候选主线（每个一句话 + 论文顺序）让用户选。用户说“直接做 / 快一点”时，自己定主线，在交付时说明。
+用户没给主题时，给 2–3 个候选主线（有 AskQuestion 工具就用它，否则直接在对话里列出）（每个一句话 + 论文顺序）让用户选。用户说“直接做 / 快一点”时，自己定主线，在交付时说明。
 
 ### 第 3 步：大纲
 
