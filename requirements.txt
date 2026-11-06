@@ -1,0 +1,6 @@
+python-pptx>=0.6.21
+lxml
+Pillow>=9
+PyMuPDF>=1.23
+matplotlib>=3.5
+numpy
